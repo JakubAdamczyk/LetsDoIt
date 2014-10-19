@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
 
   def create
-     @task = @list.tasks.create(ltask_params)
+     @task = @list.tasks.create(task_params)
 
       redirect_to list_path(@user)
   end

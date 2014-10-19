@@ -1,0 +1,24 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: prod_database
+  pool: 5
+  username: appuser
+  password: myapp
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dev_database
+  pool: 5
+  username: appuser
+  password: myapp
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: test_database
+  pool: 5
+  username: appuser
+  password: myapp

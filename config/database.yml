@@ -1,7 +1,7 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: LetsDoIt
+  database: lets_do_it
   pool: 5
   username: panda3
   password: sampleapp
@@ -10,7 +10,7 @@ production:
 development:
   adapter: postgresql
   encoding: unicode
-  database: LetsDoIt
+  database: lets_do_it_development
   pool: 5
   username: panda3
   password: sampleapp
@@ -18,7 +18,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: LetsDoIt
+  database: lets_do_it_test
   pool: 5
   username: panda3
   password: sampleapp

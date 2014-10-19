@@ -4,8 +4,10 @@ class CreateTasks < ActiveRecord::Migration
 
       t.belongs_to :list
       t.string :name
-      t.boolean :status
-      t.date :execution_date
+      t.string :status
+      t.date :from_date
+      t.date :to_date
+      t.string :description
 
       t.timestamps
     end

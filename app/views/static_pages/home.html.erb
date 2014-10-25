@@ -1,4 +1,8 @@
 <h1>Welcome to Let's Do It !</h1>
 <p>Yes we can !</p>
 
-<%= link_to "Go to your Profile", user_path(current_user) %>
+  <% if signed_in? %>
+    <%= link_to "Go to your Profile", user_path(current_user) %>
+  <% else %>
+   <p> Your life is a mess ? Time is running out! Create FREE Account</p>
+  <% end %>

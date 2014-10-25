@@ -1,0 +1,18 @@
+<h1> Your availble lists </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>List Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= link_to "#{list.name}", list %></td>
+        <td><%= link_to "Add task to #{list.name}", new_list_task_path(list) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+<h1> Your availble tasks </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Your Tasks</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= task.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+@import "bootstrap";
+
+
+$grayDarker: #222;
+
+body { 
+  background-image: url('beautiful.png');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar-link {
+  color: $gray-dark;
+}
